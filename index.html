@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WishShare - Make Wishes Come True</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <i class="fas fa-star me-2"></i>WishShare
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html" id="nav-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/wishes.html" id="nav-wishes">Wishes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/fulfill.html" id="nav-fulfill">Fulfill Wishes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/make-wish.html" id="nav-make-wish">Make a Wish</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center py-5">
+        <div class="container">
+            <h1 class="display-4 mb-4" data-aos="fade-up">Share Your Wishes</h1>
+            <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">Make wishes and help fulfill others' dreams</p>
+            <a href="/pages/make-wish.html" class="btn btn-primary btn-lg" data-aos="fade-up" data-aos-delay="200">
+                Make a Wish
+            </a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">About WishShare</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="about-content p-4 rounded-3 shadow-sm bg-white">
+                        <h3 class="h4 mb-4">Connecting Dreams with Generous Hearts</h3>
+                        <p class="mb-4">WishShare is more than just a platform – it's a community of dreamers and supporters coming together to make the impossible possible. We believe that every wish has the power to inspire, transform, and create ripples of positivity throughout the world.</p>
+                        <div class="feature-list">
+                            <div class="feature-item mb-3" data-aos="fade-up" data-aos-delay="150">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span>Safe and secure wish fulfillment process</span>
+                            </div>
+                            <div class="feature-item mb-3" data-aos="fade-up" data-aos-delay="200">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span>Verified community members</span>
+                            </div>
+                            <div class="feature-item mb-3" data-aos="fade-up" data-aos-delay="250">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span>24/7 support for all members</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                    <div class="stats-container">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="stat-card text-center p-4 rounded-3 shadow-sm bg-white">
+                                    <h4 class="counter display-4 text-primary" data-target="5">0</h4>
+                                    <p class="text-muted mb-0">Wishes Granted</p>
+                                    <div class="stat-icon">
+                                        <i class="fas fa-gift text-primary opacity-25"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="stat-card text-center p-4 rounded-3 shadow-sm bg-white">
+                                    <h4 class="counter display-4 text-primary" data-target="10">0</h4>
+                                    <p class="text-muted mb-0">Active Members</p>
+                                    <div class="stat-icon">
+                                        <i class="fas fa-users text-primary opacity-25"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="stat-card text-center p-4 rounded-3 shadow-sm bg-white">
+                                    <h4 class="counter display-4 text-primary" data-target="50">0</h4>
+                                    <p class="text-muted mb-0">Countries</p>
+                                    <div class="stat-icon">
+                                        <i class="fas fa-globe text-primary opacity-25"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">How It Works</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-center p-4">
+                        <div class="icon-circle mb-4">
+                            <i class="fas fa-magic fa-2x text-primary"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Make a Wish</h3>
+                        <p class="text-muted">Share your dream with our caring community. Be specific and tell your story.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center p-4">
+                        <div class="icon-circle mb-4">
+                            <i class="fas fa-heart fa-2x text-primary"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Connect</h3>
+                        <p class="text-muted">Your wish becomes visible to generous individuals who want to help.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center p-4">
+                        <div class="icon-circle mb-4">
+                            <i class="fas fa-star fa-2x text-primary"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Dreams Come True</h3>
+                        <p class="text-muted">Watch as the community comes together to make wishes reality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Wishes Preview -->
+    <section id="wishes-preview" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">Featured Wishes</h2>
+            <div class="row" id="wishesContainer">
+                <!-- First 3-4 wishes will be dynamically added here -->
+            </div>
+            <div class="text-center mt-4" data-aos="fade-up">
+                <a href="/pages/wishes.html" class="btn btn-outline-primary">View All Wishes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before closing body tag, add AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Firebase -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js"></script>
+    <!-- Custom JS -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Wish - WishShare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <i class="fas fa-star me-2"></i>WishShare
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html" id="nav-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/wishes.html" id="nav-wishes">Wishes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/fulfill.html" id="nav-fulfill">Fulfill Wishes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/make-wish.html" id="nav-make-wish">Make a Wish</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Make Wish Header -->
+    <header class="page-header text-center py-5 bg-light">
+        <div class="container">
+            <h1 class="display-4 mb-4">Make Your Wish</h1>
+            <p class="lead">Share your dream with our community</p>
+        </div>
+    </header>
+
+    <!-- Wish Form Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow" data-aos="fade-up">
+                        <div class="card-body">
+                            <form id="wishForm">
+                                <div class="mb-3" data-aos="fade-up" data-aos-delay="100">
+                                    <label class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="userName" required>
+                                </div>
+                                <div class="mb-3" data-aos="fade-up" data-aos-delay="100">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="userEmail" required>
+                                </div>
+                                <div class="mb-3" data-aos="fade-up" data-aos-delay="100">
+                                    <label class="form-label">Wish Category</label>
+                                    <select class="form-select" id="wishCategory" required>
+                                        <option value="">Select a category</option>
+                                        <option value="education">Education</option>
+                                        <option value="health">Health</option>
+                                        <option value="personal">Personal</option>
+                                        <option value="family">Family</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3" data-aos="fade-up" data-aos-delay="100">
+                                    <label class="form-label">Your Wish</label>
+                                    <textarea class="form-control" id="wishText" rows="5" required></textarea>
+                                </div>
+                                <div class="mb-3" data-aos="fade-up" data-aos-delay="100">
+                                    <label class="form-label">Why is this wish important to you?</label>
+                                    <textarea class="form-control" id="wishReason" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Share Your Wish</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guidelines Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Wish Guidelines</h2>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <ul class="list-group">
+                        <li class="list-group-item">Be specific about your wish</li>
+                        <li class="list-group-item">Explain why it matters to you</li>
+                        <li class="list-group-item">Keep it realistic and achievable</li>
+                        <li class="list-group-item">Be honest and sincere</li>
+                        <li class="list-group-item">Respect community guidelines</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js"></script>
+    <script type="module" src="../js/make-wish.js"></script>
+</body>
+</html> 

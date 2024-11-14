@@ -1,0 +1,280 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #2C3E50;
+}
+
+/* Updated color variables */
+:root {
+    --primary-brown: #8B4513;
+    --primary-brown-dark: #693610;
+    --light-brown: #D2691E;
+    --cream: #FFF8DC;
+    --dark-text: #2C1810;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-brown) 0%, var(--primary-brown-dark) 100%);
+    color: white;
+    padding: 100px 0;
+}
+
+/* Wish Cards */
+.wish-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    color: #2C3E50;
+    border: 1px solid #ECF0F1;
+}
+
+.wish-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom Button Styles */
+.btn-primary {
+    background: var(--primary-brown);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+}
+
+.btn-primary:hover {
+    background: var(--primary-brown-dark);
+}
+
+/* Navbar Customization */
+.navbar {
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-brown) !important;
+}
+
+.nav-link {
+    color: var(--dark-text) !important;
+}
+
+.nav-link:hover {
+    color: var(--primary-brown) !important;
+}
+
+/* Modal Customization */
+.modal-content {
+    border-radius: 15px;
+    background-color: white;
+    color: #2C3E50;
+}
+
+.modal-header {
+    border-bottom: 1px solid #4A2511;
+}
+
+.modal-footer {
+    border-top: 1px solid #4A2511;
+}
+
+/* Form Controls */
+.form-control {
+    background-color: white;
+    border: 1px solid #ECF0F1;
+    color: #2C3E50;
+}
+
+/* Form Controls */
+.form-control:focus {
+    background-color: white;
+    border-color: var(--primary-brown);
+    color: #2C3E50;
+    box-shadow: 0 0 0 0.25rem rgba(139, 69, 19, 0.25);  /* Changed from blue to brown rgba */
+}
+
+/* Card Customization */
+.card {
+    background-color: white;
+    border: 1px solid #ECF0F1;
+}
+
+.card-body {
+    color: #2C3E50;
+}
+
+#wishes-section {
+    background-color: #f8f9fa;
+}
+
+#fulfill-section {
+    background: linear-gradient(135deg, #ECF0F1 0%, #f8f9fa 100%);
+}
+
+/* Icon circles */
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(var(--bs-primary-rgb), 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.icon-circle:hover {
+    transform: translateY(-5px);
+}
+
+/* Section styling */
+.about-section, .how-it-works {
+    position: relative;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(var(--bs-primary-rgb), 0.03) 0%, rgba(var(--bs-primary-rgb), 0.05) 100%);
+    z-index: -1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-section img {
+        margin-top: 2rem;
+    }
+}
+
+.text-primary {
+    color: var(--primary-brown) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-brown) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-brown);
+    border-color: var(--primary-brown);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-brown-dark);
+    border-color: var(--primary-brown-dark);
+}
+
+.btn-outline-primary {
+    color: var(--primary-brown);
+    border-color: var(--primary-brown);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-brown);
+    border-color: var(--primary-brown);
+}
+
+/* Add animations */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.stats-container .display-4 {
+    color: var(--primary-brown);
+    font-weight: 600;
+}
+
+.about-image-container img {
+    transition: transform 0.5s ease;
+}
+
+.about-image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Stats Card Styling */
+.stat-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    font-size: 4rem;
+    opacity: 0.1;
+    transform: rotate(-15deg);
+}
+
+.counter {
+    font-weight: 600;
+    background: linear-gradient(45deg, var(--primary-brown), var(--light-brown));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* About Content Styling */
+.about-content {
+    position: relative;
+    z-index: 1;
+}
+
+.feature-item {
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateX(10px);
+}
+
+/* Custom Loading Animation */
+.processing {
+    background: linear-gradient(135deg, var(--primary-brown) 0%, var(--primary-brown-dark) 100%) !important;
+    color: white !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.processing::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 3px solid white;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
